@@ -20,3 +20,7 @@ INSERT INTO tb_triagem(data_triagem, apta_doacao, nutriz_id) VALUES('2026-08-31'
 INSERT INTO tb_triagem(data_triagem, apta_doacao, nutriz_id) VALUES('2026-08-31', false, 2);
 
 
+-- Doações
+INSERT INTO tb_doacao(data_doacao, quantidade_ml, agendamento_id)VALUES('2026-09-01', 500.0, 1);
+
+INSERT INTO tb_doacao(data_doacao, quantidade_ml, agendamento_id)VALUES('2026-09-02', 300.0, 2);

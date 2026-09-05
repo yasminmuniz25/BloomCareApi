@@ -13,7 +13,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/doacoes")
+@RequestMapping("/api/v1/doacoes")
 public class DoacaoController {
 
     @Autowired

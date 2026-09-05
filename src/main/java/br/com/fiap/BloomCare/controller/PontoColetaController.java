@@ -12,7 +12,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pontos-coleta")
+@RequestMapping("/api/v1/pontos-coleta")
 public class PontoColetaController {
 
     @Autowired

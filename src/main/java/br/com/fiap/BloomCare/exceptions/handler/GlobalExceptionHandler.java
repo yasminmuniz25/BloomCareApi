@@ -56,7 +56,7 @@ public class GlobalExceptionHandler {
 
     // 400 - tipo inválido em PathVariable/RequestParam (ex.: /produtos/abc quando espera Long)
     @ExceptionHandler(MethodArgumentTypeMismatchException.class)
-    public ResponseEntity<CustomErrorDTO> handleTypeMismatch(MethodArgumentNotValidException e,
+    public ResponseEntity<CustomErrorDTO> handleTypeMismatch(MethodArgumentTypeMismatchException e,
                                                              HttpServletRequest request){
         HttpStatus status = HttpStatus.BAD_REQUEST; //400
         CustomErrorDTO err = new CustomErrorDTO(Instant.now(), status.value(),

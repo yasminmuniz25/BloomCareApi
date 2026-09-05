@@ -61,7 +61,6 @@ public class PontoColetaService {
         pontoColeta.setTipoColeta(pontoColetaDto.getTipoColeta());
         pontoColeta.setEndereco(pontoColetaDto.getEndereco());
         pontoColeta.setCidade(pontoColetaDto.getCidade());
-        pontoColeta.setEstado(pontoColetaDto.getCidade());
         pontoColeta.setEstado(pontoColetaDto.getEstado());
         pontoColeta.setTelefone(pontoColetaDto.getTelefone());
     }

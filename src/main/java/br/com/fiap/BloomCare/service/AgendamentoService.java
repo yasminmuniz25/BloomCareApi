@@ -85,6 +85,7 @@ public class AgendamentoService {
                 throw new DatabaseException("Tipo de coleta inválido. Use apenas DOMICILIAR ou PONTO_COLETA");
             }
             mapperDtoToAgendamento(agendamentoDto, agendamento, nutriz, pontoColeta);
+            agendamento= agendamentoRepository.save(agendamento);
             return new AgendamentoDto(agendamento);
         }catch (EntityNotFoundException e){
             throw new ResourceNotFoundException("Erro ao atualizar agendamento");

@@ -13,7 +13,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/nutrizes")
+@RequestMapping("/api/v1/nutrizes")
 public class NutrizController {
 
     @Autowired

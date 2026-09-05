@@ -64,7 +64,8 @@ public class NutrizService {
     @Transactional
     public NutrizDto updateNutriz(Long id, NutrizDto nutrizDto){
         try{
-            Nutriz nutriz = nutrizRepository.getReferenceById(id);
+            Nutriz nutriz = nutrizRepository.findById(id)
+                            .orElseThrow(()-> new ResourceNotFoundException("Recurso nao encontrado."));
             mapperDtoToNutriz(nutrizDto, nutriz);
             nutriz = nutrizRepository.save(nutriz);
             return new NutrizDto(nutriz);
